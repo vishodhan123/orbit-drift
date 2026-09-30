@@ -1,0 +1,20 @@
+# Godot 4
+.godot/
+*.translation
+export/
+*.apk
+*.aab
+*.idsig
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Secrets / local signing (never commit)
+*.keystore
+*.jks
+*.key
+google-services.json
+local.properties

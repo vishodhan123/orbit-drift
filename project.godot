@@ -1,0 +1,41 @@
+; Engine configuration file.
+; Orbit Drift - neon space dodge game
+
+config_version=5
+
+[application]
+
+config/name="Orbit Drift"
+config/description="Neon space dodge — drift through asteroid lanes, collect glow orbs, chase high scores."
+config/version="1.0"
+config/tags=PackedStringArray("arcade", "space")
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.3", "Mobile")
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=720
+window/size/viewport_height=1280
+window/size/window_width_override=360
+window/size/window_height_override=640
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep_width"
+window/handheld/orientation=1
+
+[input]
+
+touch_drag={
+"deadzone": 0.5,
+"events": []
+}
+
+[rendering]
+
+renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true
+environment/defaults/default_clear_color=Color(0.02, 0.02, 0.08, 1)
+
+[android]
+
+modules=""
